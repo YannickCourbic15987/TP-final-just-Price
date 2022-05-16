@@ -1,138 +1,63 @@
-import React from "react";
+import { useState } from "react";
+
 function HomeJustPrix() {
+  //   const [winPrice] = useState([
+  //     "Une autruche",
+  //     "Un vélo",
+  //     "Un panier en osier",
+  //     "Une corde",
+  //     "Un chameau",
+  //     "Une trottinette",
+  //     "De la mort au rat ",
+  //     "un gode",
+  //     "des menottes",
+  //     "un fouet",
+  //     "une salope avec tous les accessoires",
+  //     "un lubrifiant Durex",
+  //     "un préservatif",
+  //     "1 pièce de 1 €",
+  //     "un blu-ray X",
+  //     "un canard en plastique",
+  //     "une bouteille d'eau",
+  //     "une barrette de shit",
+  //     "un paquet de clope",
+  //     "une entrée en club échangiste",
+  //     "un abonnement premium Jacquie et Michel",
+  //     "une paille-bite",
+  //     "des pinces tétons",
+  //     "un séjour en garde à vue",
+  //     "une tenue coquine",
+  //     "une entrée gratuite au cimetière",
+  //     "un doigt dans le cul voir plus",
+  //   ]);
+  // const [price] = useState(Math.round(Math.random() * 100));
+  // let [inputprice, setInputprice] = useState(null);
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (parseInt(event.target[0].value) === price) {
+  //     setInputprice("gagner");
+  //   } else {
+  //     if (parseInt(event.target[0].value) > price) {
+  //       setInputprice("plus petit");
+  //     } else {
+  //       setInputprice("plus grand");
+  //     }
+  //   }
+  // };
 
-  class Test extends React.Component {
-    constructor(props) {
-      super(props)
-      this.state = { n: props.start, timer: null }
+  // return (
+  //   <>
+  //     <h1>TP juste prix</h1>
 
-
-    }
-    componentDidMount() {
-      this.play()
-    }
-    componentWillUnmount() {
-      this.pause()
-    }
-
-
-    click() {
-      this.setState({ n: this.state.n + this.props.step })
-    }
-    click3() {
-      this.setState({ n: this.state.n + 0 })
-    }
-
-
-    pause() {
-      window.clearInterval(this.state.timer)
-      this.setState({ timer: window.setInterval(this.click3.bind(this), 1000) })
-    }
-
-    play() {
-      this.setState({ timer: window.setInterval(this.click.bind(this), 1000) })
-    }
-
-
-    render() {
-
-
-
-      return (
-        <>
-          <p>value {this.state.n}</p>
-          <button onClick={
-            this.pause.bind(this)
-          }> stop</button>
-          <button onClick={this.play.bind(this)}>play</button>
-        </>
-      )
-    }
-  }
-
-  class JustePrice extends React.Component {
-    constructor(props) {
-      super(props)
-      this.state = { y: 10 }
-
-    }
-
-    click2() {
-      this.setState({ y: this.state.y - 1 })
-    }
-
-
-
-
-    render() {
-
-
-      return (
-        <>
-          <p> result : {this.state.y}</p>
-
-          <button onClick={() => {
-            (this.click2(this))
-          }}> envoyer </button>
-
-        </>
-      )
-    }
-  }
-
-  class Form extends React.Component {
-
-    constructor(props) {
-      super(props)
-      this.state = {
-        nom: " "
-      }
-      this.handleChange = this.handleChange.bind(this)
-
-
-    }
-
-    handleChange(e) {
-
-
-      this.setState({
-        nom: e.target.value
-      })
-      console.log(this.state.nom)
-    }
-
-
-
-    render() {
-
-
-
-
-      return (
-        <>
-          <label htmlFor="nom"> votre nom</label>
-          <input type="text" id="nom" name="nom" value={this.state.nom} onChange={this.handleChange} />
-          <textarea type="text" id="nom" name="nom" value={this.state.nom} onChange={this.handleChange}>
-
-          </textarea>
-
-        </>
-      )
-    }
-  }
-
-
-
-
-
-
-
-  return (
-    <>
-      <Test start={0} step={1} />
-      <JustePrice />
-      <Form />
-    </>
-  )
+  //     <form onSubmit={(event) => handleSubmit(event)}>
+  //       <h1>Tapez un prix</h1>
+  //       <input type="number" id="price" placeholder="nombre inférieur à 100" />
+  //       <button id="btnPrice" type="submit">
+  //         submit
+  //       </button>
+  //       <div id="result">{inputprice}</div>
+  //     </form>
+  //   </>
+  // );
 }
 export default HomeJustPrix;

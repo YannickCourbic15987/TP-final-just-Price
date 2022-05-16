@@ -1,0 +1,67 @@
+.displaywin {
+    height: 270px;
+
+    background-image: url("/src/component/img/istockphoto-1324437705-170667a.jpg");
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.displaylose {
+    height: 270px;
+
+    background-image: url("/src/component/img/linkbookmarking.com_high_quality_wallpaper_HD_1080_IDS_1102284.png");
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+#form {
+    text-align: center;
+}
+
+#price {
+    padding: 0.5rem 6rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+}
+
+#btnPrice {
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: brown;
+}
+
+* {
+    color: white;
+    font-size: 1.5rem;
+}
